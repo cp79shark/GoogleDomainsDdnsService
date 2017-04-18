@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="googleDomains" type="GoogleDomainsDdnsSvc.DomainsSection, GoogleDomainsDdnsSvc" />
+  </configSections>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6" />
+  </startup>
+
+  <googleDomains>
+    <domains>
+      <clear />
+      <!-- get your ddns credentials for each hostname from your account at domains.google.com -->
+      <add hostname="blah.com" username="ABC123" password="ABC123" />
+    </domains>
+  </googleDomains>
+</configuration>
