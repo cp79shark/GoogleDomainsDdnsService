@@ -25,7 +25,7 @@ The default interval is every 24 hours an update will occur. There are five fiel
 * username: The generated username for the Dynamic DNS host entry from **Dynamic DNS** / (your subdomain) / **View Credentials** on the Google Domains DNS manager
 * password: The generated password for the Dynamic DNS host entry from **Dynamic DNS** / (your subdomain) / **View Credentials** on the Google Domains DNS manager
 * longDelay: Time in milliseconds between each Dynamic DNS update (Optional, default 86400000 or 24 hours)
-* shortDelay: Time in milliseconds between each Dynamic DNS update (Optional, default 600000 or 10 minutes)
+* shortDelay: Time in milliseconds between each Dynamic DNS update IF Google responds with a 911 or other error (Optional, default 600000 or 10 minutes)
 
 ```
     <googleDomains>
