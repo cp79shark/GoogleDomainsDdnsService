@@ -19,7 +19,7 @@ You'll need these to configure GoogleDomainsDdnsSvc.
 
 ## Configuration File Overview
 The GoogleDomainsDdnsSvc.exe.config defines what hosts and how often to update their Dynamic DNS entries. 
-The default interval is every 24 hours an update will occur. There are five fields that make up a <domains> collection entry.
+The default interval is every 24 hours an update will occur. There are five fields that make up a &lt;domains&gt; collection entry.
 
 * hostname: The host entry (xyz.blah.com) you wish to update
 * username: The generated username for the Dynamic DNS host entry from **Dynamic DNS** / (your subdomain) / **View Credentials** on the Google Domains DNS manager
@@ -27,14 +27,14 @@ The default interval is every 24 hours an update will occur. There are five fiel
 * longDelay: Time in milliseconds between each Dynamic DNS update (Optional, default 86400000 or 24 hours)
 * shortDelay: Time in milliseconds between each Dynamic DNS update (Optional, default 600000 or 10 minutes)
 
+```
     <googleDomains>
         <domains>
-            <!-- good idea to clear -->
             <clear />
-            <!-- get your ddns credentials for each hostname from your account at domains.google.com -->
             <add hostname="blah.com" username="ABC123" password="ABC123" />
         </domains>
     </googleDomains>
+```
 
 ## How to Use (binaries)
 
