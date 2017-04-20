@@ -11,7 +11,7 @@
     <domains>
       <clear />
       <!-- get your ddns credentials for each hostname from your account at domains.google.com -->
-      <add hostname="blah.com" username="ABC123" password="ABC123" />
+      <add hostname="xyz.blah.com" username="ABC123" password="ABC123" />
     </domains>
   </googleDomains>
 </configuration>
